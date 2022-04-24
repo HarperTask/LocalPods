@@ -1,0 +1,48 @@
+# Uncomment the next line to define a global platform for your project
+#source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+#source 'https://github.com/CocoaPods/Specs.git'
+ platform :ios, '12.0'
+
+target 'LocalPods' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # The popular posSpecs
+  pod 'AFNetworking', '4.0.1'
+  pod 'RealReachability', '1.4.1'
+  pod 'Masonry', '1.1.0'
+  pod 'SDWebImage', '5.12.3'
+  pod 'ReactiveObjC', '3.1.1'
+  pod 'MJRefresh', '3.7.2'
+  pod 'MJExtension', '3.3.0'
+  
+#  pod 'SocketRocket', '0.6.0'
+#  pod 'MBProgressHUD', '1.2.0'
+#  pod 'FMDB', '2.7.5'
+  
+
+  # Local Components
+  pod 'XCategory', :path => 'Components/Category/'
+  
+  
+  #pod 'FBSDKShareKit', '13.1.0' # Facebook share pod
+  
+
+  
+end
+
+=begin
+
+# 仓库源 [如果不设置源，则trunk CDN]
+source 'https://github.com/CocoaPods/Specs.git'
+
+# 使用framework
+use_frameworks!
+
+# 忽略警告
+inhibit_all_warnings!
+
+# pod try
+试用方式，在临时目录pod http://blog.cocoapods.org/CocoaPods-0.29
+
+=end
